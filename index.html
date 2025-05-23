@@ -1,0 +1,90 @@
+<!--I am Hiding this code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>corvit </title>
+    <style>
+
+        .button_dummy{
+            align-items: center;
+            border-radius: 0%;
+            margin-top: 0%;
+            margin-left: 0%;
+            margin-bottom: 0%;
+            border-color: aquamarine;
+            shape-margin: 0%;
+        }
+
+        input
+        {
+            background-color: aqua;*/
+            font-size: 48px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <form method="post" name="admission_form" action="">
+
+        <table  align="center" width="15%" border="0" align="center" cellspacing="5" cellpadding="10" style="background-color: rgb(0, 213, 255);">
+            <tr>
+                <td colspan="0" align="center"><h1>Calculator</h1></td>
+            </tr>
+         
+            <tr>
+                
+                <td><input type="text" size="10" maxlength="8" name="admission_user_name" onkeypress="return chr(event);" ></td>
+            </tr>
+            <tr>
+                
+                <td><input type="text" size="10" required maxlength="8" name="admission_father_name" onkeypress="return chr(event);"></td>     
+            </tr>
+            <tr>
+                <td>
+                <button class="button_dummy" align="center"  length="50%" width="50%" size="20%" shape="round" border-radius="20%" >1</button>
+                <button class="button_dummy" align="center"  length="50%" width="50%" size="20%" shape="round" border-radius="20%" >2</button>
+                <button class="button_dummy" align="center"  length="50%" width="50%" size="20%" shape="round" border-radius="20%" >3</button>
+                <button id="bplus" value="plus" onclick="fplus(this.value);" class="button_dummy" align="horizontal" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <button class="button_dummy" align="center" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >4</button>
+                <button class="button_dummy" align="center" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >5</button>
+                <button  class="button_dummy" align="center" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >6</button>
+                <button class="button_dummy" align="horizontal" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <button class="button_dummy" align="center" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >7</button>
+                <button class="button_dummy" align="center" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >8</button>
+                <button class="button_dummy" align="center" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >9</button>
+                <button class="button_dummy" align="horizontal" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <button class="button_dummy" align="center" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >0</button>
+                <button class="button_dummy" align="horizontal" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >/</button>
+                <button class="button_dummy" align="horizontal" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >=</button>
+                <button class="button_dummy" align="horizontal" length="50%" width="50%" size="20%" shape="round" border-radius="20%" >%</button>
+            </td>
+            </form>
+
+            <script>
+                function fplus(receive)
+                {
+                    op = document.getElementById("bplus").value;
+                document.getElementsByName("admission_user_name").value = op;    
+                alert(op);
+                    return false;
+
+                }
+            </script>
+</body>
+</html>
+//
